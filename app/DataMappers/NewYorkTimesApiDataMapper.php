@@ -16,7 +16,7 @@ class NewYorkTimesApiDataMapper
                 'title' => $news->headline->main,
                 'description' => $news->lead_paragraph,
                 'url' => $news->web_url,
-                'image' => $news->multimedia[0]->url,
+                'image' => 'https://www.nytimes.com/'.$news->multimedia[0]->url,
             ];
         }
 
