@@ -13,3 +13,8 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
+
+# Laravel specific files to include
+!bootstrap/cache/.gitignore
+!storage/logs/.gitignore
+!storage/framework/.gitignore
