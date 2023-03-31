@@ -17,7 +17,7 @@ class NewYorkTimesApiDataMapper
                 'description' => $news->lead_paragraph,
                 'url' => $news->web_url,
                 'image' => 'https://www.nytimes.com/'.$news->multimedia[0]->url,
-                'content' => ''
+                'content' => $news->lead_paragraph
             ];
         }
 
