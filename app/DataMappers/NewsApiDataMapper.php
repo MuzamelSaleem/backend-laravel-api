@@ -18,6 +18,7 @@ class NewsApiDataMapper
                 'description' => $news->description,
                 'url' => $news->url,
                 'image' => $news->urlToImage,
+                'content' => $news->content,
             ];
         }
 

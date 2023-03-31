@@ -25,8 +25,10 @@ class NewsService
 
         $news = [];
         
+        $searchkeyword = $request->get('searchkeyword');
         $api = $request->get('source');
         $category = $request->get('category');
+        $date = $request->get('date');
 
         $newsApiEndpoint = "https://newsapi.org/v2/top-headlines?sources=$source&apiKey=ee8e2e1317b14c398ce8e818daba91c5";
         $newYorkTimesApiEndpoint = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=$category&api-key=w7kxA2oS7AveAzM11ymWhkPICWLriLL4";
